@@ -87,7 +87,7 @@ jobs:
             fi
 
             # Jalankan aplikasi
-            sudo nohup $VENV_DIR/bin/python bot.py > output.log 2>&1 &
+            sudo nohup $VENV_DIR/bin/python $PROJECT_DIR/bot.py > $PROJECT_DIR/output.log 2>&1 &
 
             echo "Deploy selesai. Aplikasi Bot sudah berjalan."
           EOF
